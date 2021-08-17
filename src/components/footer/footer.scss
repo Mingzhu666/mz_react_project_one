@@ -1,0 +1,50 @@
+@import "../../global.scss";
+
+.footer {
+  // position: relative;
+  // bottom: 0;
+  background-color: $firstColorDark;
+  color: $firstColorLighten;
+  text-align: center;
+
+  .footer__container {
+    background-color: $firstColorDarken;
+    padding: 3rem 0;
+    border-radius: 5rem;
+    // width: 80%;
+
+    .footerTitle {
+      font-size: $h1FontSize;
+      margin-bottom: $mb2;
+    }
+
+    .footerDescription {
+      margin-bottom: $mb2;
+    }
+
+    .footerSocial {
+      margin-bottom: 3rem;
+
+      .footerSocialLink {
+        display: inline-flex;
+        background-color: $firstColor;
+        color: $firstColorLighten;
+        font-size: 1.1rem;
+        border-radius: 50%;
+        padding: 0.4rem;
+        margin: 0 $mb1;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: $firstColorLighten;
+          color: $firstColor;
+        }
+      }
+    }
+
+    .footerCopy {
+      font-size: $smallerFontSize;
+      color: $textColor;
+    }
+  }
+}
